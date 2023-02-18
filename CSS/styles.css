@@ -1,0 +1,81 @@
+
+body{
+    margin:0;
+    overflow: scroll;
+}
+.menu_ul{
+    float:right;/*Make the menu appear on the right of the website*/
+    list-style-type:none;
+    padding:17px;
+    overflow: hidden;/*prevents the menu from being scrollable if the text overflows*/
+    position:fixed;
+    right:25px;/*fixes the navigation bar to the right of the webpage when scrolling*/
+    width: 420px;/*size of menu relative to webpage width*/
+}
+
+.menu_ul li{
+    float:right;/*Make the menu appear on the right of the website*/
+    border-right:1px solid #bbb;/*Add link dividers as borders*/
+    border-left:1px solid #bbb;/*Add link dividers as borders*/
+}
+.menu_ul li:last-child{
+    border-right: none;
+}
+.menu_ul li:first-child{
+    border-left: none;
+}
+.menu_ul li a {
+   display: block;
+   color:white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+/*Change the menu link color on hover*/
+.menu_ul li a:hover:not(.active){
+    background-color: #111;
+
+}
+.active{
+    background-color: #04aa6d;
+}
+h1{
+    margin:0;
+}
+.socialmedia_facebook{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.socialmedia_twitter{
+    position: fixed;
+    bottom: 0;
+    right: 120px;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.menubar{
+    position: absolute;
+    top: 8px;
+    right: 200px;
+}
+
+.about_us_container{
+    position: absolute;
+    text-align: left;
+    left:32%;
+    transform:translate(-50,-50);
+}
+
+.meet_staff_button:hover{
+    background-color: #111;
+}
+.meet_staff_button{
+    background-color: aqua;
+    color: white;
+}
