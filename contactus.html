@@ -6,7 +6,7 @@
         <title>Contact Us</title> <!--head contains meta data or the website-->
         
         <div class = "container">
-            <img src ="ASSETS\eye_background.jpg" alt="eye_background image" width="100%" height="200">   
+            <img src ="ASSETS/eye_background.jpg" alt="eye_background image" width="100%" height="200">   
             <div class ="menubar">
                 <ul class="menu_ul">
                     <li><a href ="home.html">Home Page</a></li>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <script src="JS/myScript.js"></script>
-        <link rel="stylesheet" href="CSS\styles.css">
+        <link rel="stylesheet" href="CSS/styles.css">
     
     </head>
     <body><!--Container for a ll visible content-->
@@ -41,11 +41,17 @@
 
         <hr>
 
-        <div style="position:absolute; background-color: aquamarine; width: 100%; height: 31%;">
-            <h3 style="position: relative; top:-28px;left:615px; font-size: 80px;">Request a Consultation</h3>
-            <p style="position: relative; margin-left: 30px; top: -23%; left:585px; width: 823px; font-size: 40px;">Are you in need of accessible, affordable and quality eye care service within Ibadan? Then Visus Perfectus specialist eye clinic is your answer.</p>
+        <div style="position:relative; background-color: aquamarine; width: 2650px; height: 400px;">
+            <h3 style="position:absolute; top:-28px;left:615px; font-size: 80px;">Request a Consultation</h3>
+            <p style="position: absolute; top: 546px; left:65px; font-size: 30px; width:509px; text-align: center;">Opening hours:
+                <br>
+                Monday to Friday: 9am to 6pm
+                <br>
+                Saturday and public holidays: 9am to 1pm
+            </p>
+            <p style="position: absolute; margin-left: 30px; top: 25%; left:585px; width: 823px; font-size: 40px;">Are you in need of accessible, affordable and quality eye care service within Ibadan? Then Visus Perfectus specialist eye clinic is your answer.</p>
             
-            <form class="" style=" position:absolute; right: 19%; top:32%;" action="send.php" method="post">
+            <form class="" style=" position:absolute; right: 1000px; top:124px;" action="send.php" method="post">
                 <label style = "position: absolute; top: -37%; left:-174px;" for="fname">First name:</label><br>
                 <input style = "position: absolute; top: -26%; left:-174px;" type="text" id="fname" name="fname" value="John"><br>
                 <label style = "position: absolute; top: -37%; right:-83px ;" for="lname">Last name:</label><br>
@@ -56,16 +62,31 @@
                 <input style = "position:absolute; top:25%; width: 356px; height: 98px; right:-188px;" type="text" id="message" name="message" value="Please briefly decribe the problem"><br/><br/>
                 <input style = "position: absolute; right: -28px; top:155px;" type="submit" name = "send" value="Submit">
             </form>
-        </div>
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=comfort%20pharmacy%20ibadan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;top:411px;left:700px;text-align:right;height:400px;width:1080px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div></div>
-
+        </div><!--https://google-map-generator.com/-->
         <hr>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="1080" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=comfort%20pharmacy%20ibadan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+                <a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a>
+                <br>
+                <style>
+                    .mapouter{position:relative;left:700px;text-align:right;height:400px;width:1080px;}
+                </style>
+                <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                <style>
+                    .gmap_canvas {overflow:hidden;background:none!important;height:400px;width:1080px;}
+                </style>
+            </div>
+        </div>
+
+       
         <div>
-            <img src="ASSETS/facebook_icon.png" alt="facebook" style="position:absolute; bottom: 3%; right: 2%; width: 50px;">
+            <img src="ASSETS/facebook_icon.png" alt="facebook" style="position:fixed; bottom: 3%; right: 2%; width: 50px;">
             <a class= "socialmedia_facebook" href = "https://www.facebook.com/visus.perfectus?mibextid=ZbWKwL">Link to facebook</a>
         </div>
         <div>
-            <img src="ASSETS/twitter_icon.png" alt="twitter" style="position:absolute; bottom: 2.5%; right: 7%; width:60px;">
+            <img src="ASSETS/twitter_icon.png" alt="twitter" style="position:fixed; bottom: 2.5%; right: 7%; width:60px;">
             <a class= "socialmedia_twitter" href = "https://twitter.com/visusperfectus?t=J3UoB0t1eF9nAgS9Xnu8nQ&s=09">Link to twitter</a> 
         </div>
     </body>

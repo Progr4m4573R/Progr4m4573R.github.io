@@ -1,14 +1,14 @@
 
 body{
     margin:0;
-    overflow: scroll;
+    overflow: none;
 }
 .menu_ul{
     float:right;/*Make the menu appear on the right of the website*/
     list-style-type:none;
     padding:17px;
     overflow: hidden;/*prevents the menu from being scrollable if the text overflows*/
-    position:fixed;
+    position:relative;
     right:25px;/*fixes the navigation bar to the right of the webpage when scrolling*/
     width: 420px;/*size of menu relative to webpage width*/
 }
@@ -61,8 +61,8 @@ h1{
 
 .menubar{
     position: absolute;
-    top: 8px;
-    right: 200px;
+    top: -9px;
+    right: 10px;
 }
 
 .about_us_container{
