@@ -1,4 +1,5 @@
 <?php
+//source: https://www.youtube.com/watch?v=9tD8lA9foxw&ab_channel=DavidGTech
 use PHPMailer\PHPMailer\PHPMailer;
 
 
@@ -21,7 +22,7 @@ if(isset($_POST["send"])){
 
     $mail->setFrom('visusmailer@gmail.com');//your gmail
 
-    $mail->addAddress("visusperfectus@gmail.com");//
+    $mail->addAddress("shiift13@gmail.com");//"visusperfectus@gmail.com"
 
     $mail->isHTML(true);
 
