@@ -3,9 +3,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 
 
-require "\Dad's website design 2.0\PHP\PHPMailer-master\src\Exception.php";
-require "\Dad's website design 2.0\PHP\PHPMailer-master\src\PHPMailer.php";
-require "\Dad's website design 2.0\PHP\PHPMailer-master\src\SMTP.php";
+require "PHP\PHPMailer-master\src\Exception.php";
+require "PHP\PHPMailer-master\src\PHPMailer.php";
+require "PHP\PHPMailer-master\src\SMTP.php";
 
 // Send email 
 
