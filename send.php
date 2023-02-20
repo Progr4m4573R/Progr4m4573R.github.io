@@ -20,17 +20,22 @@ if(isset($_POST["send"])){
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
+    //retrieve info from form source: https://stackoverflow.com/questions/49373173/issue-with-contact-form-html-and-php-405-not-allowed
+    $fname = $_POST["fname"];
+    $lname = $_POST["lname"];
+    $customer_email = $_POST["email"];
+    $message = $_POST[ "message"];
+
     $mail->setFrom('visusmailer@gmail.com');//your gmail
 
-    $mail->addAddress("shiift13@gmail.com");//"visusperfectus@gmail.com"
+    $mail->addAddress("shiift13@gmail.com");//visusperfectus@gmail.com" receiving email address
 
     $mail->isHTML(true);
 
     $mail->Subject = "Customer Email";
-    $mail->Body = $_POST[ "message"];
     
-
-    ///reply to customer email as well
+    $textbody = "Customer name: ".$fname." $lname"." \n\nCustomer Email: ".$customer_email."\n\nMessage: ".$message;
+    $mail->Body = $textbody;
     
     $mail->send();
 
@@ -43,7 +48,8 @@ if(isset($_POST["send"])){
 else{
     echo 'Email sending failed';
 }
-    ///Automated reply to customer email as well
+
+///Automated reply to customer email as well
 if(isset($_POST["send"])){
     $mail = new PHPMailer(true);
 
