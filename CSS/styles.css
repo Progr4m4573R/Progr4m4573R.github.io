@@ -129,9 +129,24 @@ h1{
     color: white;
   }
 
+.faq_home_text{
+    position: fixed; top: 50%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;
+}
+.faq_home_questions{
+    position: fixed; top: 55%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;
+}
   /*Responsive Web design - Media Queries, source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     body {
+        font-size: 10px;
+    }
+    head {
+        font-size: 10px;
+    }
+    .faq_home_text{
+        font-size: 10px;
+    }
+    .faq_home_questions{
         font-size: 10px;
     }
   }
