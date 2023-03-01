@@ -67,9 +67,9 @@ h1{
 
 .about_us_container{
     position: absolute;
-    text-align: left;
     left:32%;
-    transform:translate(-50,-50);
+    transform:translate(11%,4%);
+    font-size: 20px;
 }
 
 .meet_staff_button:hover{
@@ -135,7 +135,21 @@ h1{
 .faq_home_questions{
     position: fixed; top: 55%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;
 }
-  /*Responsive Web design - Media Queries, source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+.logo {
+    margin: 3px;
+}
+
+.logo_mini{
+    margin: 3px;
+}
+
+
+#dadwithbuilding{
+    position:absolute; bottom: 21%; right: 108%; width: 500px;
+}
+
+
+/*Responsive Web design - Media Queries, source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media only screen and (max-width: 600px) {
     body {
         font-size: 10px;
@@ -148,5 +162,22 @@ h1{
     }
     .faq_home_questions{
         font-size: 10px;
+    }
+    .logo{
+        margin: 3px; position: absolute;
+        top: 0px;
+    }
+    .logo_mini{
+        margin: 3px; position: absolute;
+        top: 25px;
+    }
+    .about_us_container{
+        font-size: 10px;
+        left: 0%;
+    }
+    #dadwithbuilding{
+        width: 312px;
+        bottom:-86%;
+        right: 17%;
     }
   }
