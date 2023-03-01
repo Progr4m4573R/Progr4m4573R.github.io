@@ -6,7 +6,7 @@
         <title>Staff Page</title> <!--head contains meta data or the website-->
          
         <div class = "container">
-            <img src ="ASSETS/eye_background.jpg" alt="eye_background image" width="100%" height="200">   
+            <img class="banner" src ="ASSETS/eye_background.jpg" alt="eye_background image">   
             <div class ="menubar">
                 <ul class="menu_ul">
                     <li><a href ="home.html">Home Page</a></li>
@@ -23,13 +23,13 @@
     <body><!--Container for a ll visible content-->
 
         <h1 style="text-align: center; margin: 100px;">Staff Page</h1>
-        <div style="position: relative;">
+        <div class="staff_page_div1">
             <p style="font-size: 28px; position: absolute; left: 550px; width: max-content;">Dr Charles Bekibele </p>
             <p style="font-size: 19px; top: 41px; position: absolute; left: 551px;">Director</p>
             <button onclick="ShowAndHide1()" class="meet_staff_button" style="font-size: 19px; margin: 0; position: absolute; left: 551px; padding: 15px; border-width: 0; top: 138px; width: max-content;">Meet Dr Charles</button>
-            <img style="position: absolute; top:10px; left: 1200px;" src ="ASSETS/Dad.jpeg" alt="Dad image" width="300" height="300">
+            <img id="dad_picture" src ="ASSETS/Dad.jpeg" alt="Dad image">
         </div>
-        <div id="staff_desc" style="display: none; position: relative; top: 210px;left: 550px; width: 580px;">
+        <div id="staff_desc" class="dad_desc">
             <p>Professor Charles BEKIBELE, MBBS, MSc, FMCOph, FWACS, MD.</p>
             <p>Bekibele, Charles Obu is a Professor of Ophthalmology.
                 <br>He graduated MBBS 1987, University of Ibadan, MSc (CEH) University of London 2009. 
@@ -50,13 +50,13 @@
             <p>English, Urhobo</p> 
         </div>
         
-        <div style=" position:relative; top: -530px;">
+        <div class="staff_page_div2">
             <p style="font-size: 28px; top: 813px; position: absolute; left: 549px; width: max-content;">Dr Izuka Okwudishu </p>
             <p style="font-size: 19px; top: 856px; position: absolute; left: 549px;">MBBS, FWACS, FMCOph. Consultant Ophthalmologist</p>
-            <button onclick="ShowAndHide2()" class="meet_staff_button" style="font-size: 19px; margin: 0; position: absolute; top:927px; left: 550px; padding: 15px; border-width: 0 ; width: max-content;">Meet Dr Okwudishu</button>
-            <img style="position: absolute; top: 902px; left: 1200px;" src ="ASSETS/Dr Okwudishu.jpg" alt = "Dr Okwudishu" width="300"height="300">
+            <button onclick="ShowAndHide2()" class="meet_staff_button" style="font-size: 19px; margin: 0; position: absolute; top:1034px; left: 550px; padding: 15px; border-width: 0 ; width: max-content;">Meet Dr Okwudishu</button>
+            <img id="collegue_picture1" src ="ASSETS/Dr Okwudishu.jpg" alt = "Dr Okwudishu">
         </div>
-        <div id="staff_desc2" style="display: none; position:relative; top: 470px; left: 550px; width: 600px;">
+        <div id="staff_desc2" class="collegue_desc1">
             <p>Dr Izuka Okwudishu, MBBS, FWACS, FMCOph. Consultant Ophthalmologist</p> 
             <p>Dr Izuka obtained Fellowship of both the National Postgraduate Medical College and West African College of surgeons in 2015.</p>
             <h4>Professional Qualifications:</h4>

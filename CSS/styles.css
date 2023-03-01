@@ -3,6 +3,7 @@ body{
     margin:0;
     overflow-x: hidden;
 }
+
 .menu_ul{
     float:right;/*Make the menu appear on the right of the website*/
     list-style-type:none;
@@ -142,12 +143,30 @@ h1{
 .logo_mini{
     margin: 3px;
 }
-
-
+.banner{
+    width:111%; height:200px;
+}
 #dadwithbuilding{
     position:absolute; bottom: 21%; right: 108%; width: 500px;
 }
-
+#dad_picture{
+    position: absolute; top:10px; left: 1200px; width:300px; height:300px;
+}
+.dad_desc{
+    display: none; position: relative; top: 210px;left: 550px; width: 580px;
+}
+#collegue_picture1{
+    position: absolute; top: 902px; left: 1200px; width:300px; height:300px
+}
+.collegue_desc1{
+    display: none; position:relative; top: 584px; left: 550px; width: 600px;
+}
+.staff_page_div1{
+    position: relative;
+}
+.staff_page_div2{
+    position:relative; top: -530px;
+}
 
 /*Responsive Web design - Media Queries, source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media only screen and (max-width: 600px) {
@@ -179,5 +198,39 @@ h1{
         width: 312px;
         bottom:-86%;
         right: 17%;
+    }
+    .staff_page_div1{
+        left:-87%;
+    }
+    #dad_picture{
+        left: 782px;
+        width: 200px;
+        height: 200px;
+    }
+    .dad_desc{
+        top: 225px;
+        left: 63px;
+    }
+    .staff_page_div2{
+        left:-87%;
+    }
+    #collegue_picture1{
+        left: 782px;
+        width: 200px;
+        height: 200px;
+    }
+    .collegue_desc1{
+        left: 63px;
+        width: 340px;
+    }
+    .faq_ul{
+        font-size: 10px;
+        width: 368px;
+    }
+    .dropdown-content{
+        width:340px;
+    }
+    .faq_ul li p{
+        width: 300px;
     }
   }
