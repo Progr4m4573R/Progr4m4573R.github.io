@@ -17,12 +17,6 @@ function ShowAndHide2() {
 }
 
 
-/*https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event*/
-// function logSubmit(event) {
-//     log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
-//     //event.preventDefault();
-//   }
-  
-//   const form = document.getElementById('form');
-//   const log = document.getElementById('log');
-//   form.addEventListener('submit', logSubmit);
+//Fade in fade out FAQ
+
+

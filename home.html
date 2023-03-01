@@ -16,9 +16,34 @@
             <li><a href ="contactus.html">Contact Us</a></li>
         </ul>
         <script src="JS/myScript.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <link rel="stylesheet" href="CSS/styles.css">
 
     </head>
+    <!--JQuery smooth transitions, source: https://stackoverflow.com/questions/44782056/i-want-my-text-change-animation-in-javascript-to-have-smooth-transition-->
+    <script>
+        $(document).ready(function(){
+            var text = [
+                "I am 40years old and find it increasingly difficult to read prints in dim light. Why is this so?",
+                "Is my child not too young to wear glasses?", 
+                "Is glaucoma inherited?",
+                "How can I avoid developing cataract?",
+                "Why is glaucoma called the silent thief that steals your sight away?",
+                "Is conjunctivitis (appolo) infectious?"
+            ];
+            var counter = 0;
+            var elem = $("#questions");
+            setInterval(change, 3000);
+            function change() {
+                elem.fadeOut(function(){
+                    elem.html(text[counter]);
+                    counter++;
+                    if(counter >= text.length) { counter = 0; }
+                    elem.fadeIn();
+                });
+            }
+});
+    </script>
     <body><!--Container for all visible content-->
         <style>
             body{
@@ -32,7 +57,7 @@
         <h1>Visus Perfectus</h1>
         <h4 style="margin: 0;">specialist eye clinic</h4>
         <a style= " position: fixed; top: 50%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;"  href = "faq.html">FAQ</a> 
-        <a style=" position: fixed; top: 55%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;" href ="faq.html">"How can i book an appointment?"</a>
+        <a id = "questions" style=" position: fixed; top: 55%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;" href ="faq.html">"How can i book an appointment?"</a>
         <div>
             <img src="ASSETS/facebook_icon.png" alt="facebook" style="position:fixed; bottom: 25px; right: 35px; width: 50px;">
             <a class= "socialmedia_facebook" href = "https://www.facebook.com/visus.perfectus?mibextid=ZbWKwL">Link to facebook</a>
