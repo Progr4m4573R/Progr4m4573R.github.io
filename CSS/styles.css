@@ -1,9 +1,8 @@
-
 body{
     margin:0;
     overflow-x: hidden;
 }
-
+/*Menu CSS start*/
 .menu_ul{
     float:right;/*Make the menu appear on the right of the website*/
     list-style-type:none;
@@ -13,7 +12,6 @@ body{
     right:25px;/*fixes the navigation bar to the right of the webpage when scrolling*/
     width: 420px;/*size of menu relative to webpage width*/
 }
-
 .menu_ul li{
     float:right;/*Make the menu appear on the right of the website*/
     border-right:1px solid #bbb;/*Add link dividers as borders*/
@@ -32,47 +30,68 @@ body{
    padding: 14px 16px;
    text-decoration: none;
 }
-/*Change the menu link color on hover*/
-.menu_ul li a:hover:not(.active){
+.menu_ul li a:hover:not(.active){/*Change the menu link color on hover*/
     background-color: #111;
 
 }
 .active{
     background-color: #04aa6d;
 }
-h1{
-    margin:0;
-}
-.socialmedia_facebook{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
-.socialmedia_twitter{
-    position: fixed;
-    bottom: 0;
-    right: 120px;
-}
+/*Menu CSS end*/
 
+/*Banner CSS start*/
+.banner{
+    width:100%; height:200px;
+}
+/*Banner CSS end*/
+
+/*Non-homepage Menu css for banner and menu manipulation start*/
 .container{
     position: relative;
     text-align: center;
     color: white;
 }
-
 .menubar{
     position: absolute;
     top: -9px;
     right: 10px;
 }
+/*Non-homepage Menu css end*/
+h1{
+    margin:0;
+}
+/*Social media link images and text css start*/
+.socialmedia_facebook_img{
+    position:fixed; bottom: 25px; right: 35px; width: 50px;
+}
+.socialmedia_twitter_img{
+    position:fixed; bottom: 20px; right: 128px; width:60px;
+}
+.socialmedia_facebook_text{
+    position: fixed;
+    bottom: 0;
+    right: 0; 
+}
+.socialmedia_twitter_text{
+    position: fixed;
+    bottom: 0;
+    right: 120px;
+}
+/*Social media link images and text css end*/
 
+/*About Us CSS start*/
 .about_us_container{
     position: absolute;
     left:32%;
     transform:translate(11%,4%);
     font-size: 20px;
 }
+#dadwithbuilding{
+    position:absolute; bottom: 21%; right: 108%; width: 500px;
+}
+/*About Us CSS end*/
 
+/*staff page CSS start*/
 .meet_staff_button:hover{
     background-color: #111;
 }
@@ -80,7 +99,28 @@ h1{
     background-color: aqua;
     color: white;
 }
-/*Dropdown FAQ animations*/
+
+#dad_picture{
+    position: absolute; top:10px; left: 1200px; width:300px; height:300px;
+}
+.dad_desc{
+    display: none; position: relative; top: 210px;left: 550px; width: 580px;
+}
+#collegue_picture1{
+    position: absolute; top: 902px; left: 1200px; width:300px; height:300px
+}
+.collegue_desc1{
+    display: none; position:relative; top: 584px; left: 550px; width: 600px;
+}
+.staff_page_div1{
+    position: relative;
+}
+.staff_page_div2{
+    position:relative; top: -530px;
+}
+/*staff page CSS end*/
+
+/*FAQ page CSS start*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -123,9 +163,7 @@ h1{
     width: 1102px;
 
   }
-  
-  /* Change the link color on hover */
-.faq_ul li:hover {
+.faq_ul li:hover {  /* Change the link color on hover */
     background-color: #555;
     color: white;
   }
@@ -136,6 +174,9 @@ h1{
 .faq_home_questions{
     position: fixed; top: 55%; left: -1%; font-size: 30px; color: azure; text-decoration: none; padding: 50px;
 }
+/*FAQ page CSS end*/
+
+/*LOGO CSS start*/
 .logo {
     margin: 3px;
 }
@@ -143,30 +184,9 @@ h1{
 .logo_mini{
     margin: 3px;
 }
-.banner{
-    width:111%; height:200px;
-}
-#dadwithbuilding{
-    position:absolute; bottom: 21%; right: 108%; width: 500px;
-}
-#dad_picture{
-    position: absolute; top:10px; left: 1200px; width:300px; height:300px;
-}
-.dad_desc{
-    display: none; position: relative; top: 210px;left: 550px; width: 580px;
-}
-#collegue_picture1{
-    position: absolute; top: 902px; left: 1200px; width:300px; height:300px
-}
-.collegue_desc1{
-    display: none; position:relative; top: 584px; left: 550px; width: 600px;
-}
-.staff_page_div1{
-    position: relative;
-}
-.staff_page_div2{
-    position:relative; top: -530px;
-}
+/*LOGO CSS end*/
+
+
 
 /*Responsive Web design - Media Queries, source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media only screen and (max-width: 600px) {
